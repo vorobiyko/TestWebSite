@@ -1,0 +1,666 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+}
+h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+
+    color: #000000;
+}
+h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 19px;
+}
+h5{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+}
+h6{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15.85px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+}
+ *{
+     box-sizing: border-box;
+ }
+.container{
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 52px   ;
+}
+.list {
+    /* text-decoration: none  ; */
+    /* border: orangered 1px solid; */
+    white-space: nowrap;
+    display: flex;
+    list-style-type: none;
+    padding: 0%;
+    margin-left: 105px;
+    margin-right: 41px;
+
+
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:active{
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.list li {
+    margin-left: 30px;
+    font-weight: 400;
+}
+li.newReleases{
+    margin-left: 0px;
+}
+.toolbar{
+   display: flex;
+ 
+}
+a.heart{
+    background: url("icons/akar-icons_heart.svg");
+    display: block;
+     margin-right: 15px;
+     width: 24px;
+    height: 24px;
+   
+}
+.cart{
+    background: url("icons/mdi-light_cart.svg");
+    display: block;
+    width: 24px;
+    height: 24px;
+   
+}
+
+.heart:hover{
+    background: url(icons/akar-icons_heart_activity.svg);
+}
+.cart:hover{
+    background: url(icons/mdi-light_cart_activity.svg);
+}
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 133px;
+  margin: 0 auto;
+  margin-right: 37px;
+}
+input, button {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+input {
+  width: 100%;
+  height: 32px;
+  background: rgba(243, 243, 243, 0.71);
+  padding-left: 35px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    align-content: center;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    top: auto;
+}
+button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  background:none;
+  cursor: pointer;
+}
+button:before {
+  content:icon;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+}
+
+.search input:focus{
+    border: rgba(0, 0, 0, 1) 1px solid;
+}
+.header-content{
+    
+    display: flex;
+    margin-top: 81px;
+}
+.offer{
+    width: 490px;
+   
+}
+.offer h1{
+    font-size: 40px;
+    font-style: 700;
+    letter-spacing: 0.05em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin-top: 123px;
+}
+.offer p{
+    font-size: 15px;
+    font-size: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.64em;
+    text-transform: uppercase;
+    margin: 50px 0px;
+}
+.btn{
+    text-decoration: none;
+    box-sizing: border-box;
+    border: #000 1px solid;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    line-height: 18px;
+    font-weight: 500;
+    margin-bottom: 202px;
+    padding: 16.25px 0px;
+    text-align:center;
+    /* order: 2; */
+    border-radius: 30px;
+    text-transform: uppercase;
+    display: block;
+    width: 155px;
+    
+}
+.btn:hover{
+    color: #fff;
+    text-decoration: none;
+    background: #000;
+}
+/* * {box-sizing: border-box;} */
+.picture{
+    background-position: center;
+    background: url(http://cdn.yoox.biz/43/43201308tq_13_f.jpg) ;
+    max-width: 490px;
+    max-height: 600px;
+    min-width: auto;
+    min-height: auto;
+    background-size: 100% auto;
+    /* max-width: 100%;
+    height: auto; */
+    margin: 0;
+    margin-left: 20px;
+    border-radius: 5px;
+    
+
+}
+.chevron{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    width: 490px;
+    height: 600px;
+
+}
+.chevronL, .chevronR{
+    background: url(icons/mdi-light_chevron-right.svg);
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.chevronR{
+    transform: rotate(-180deg);
+}
+.chevronL:hover{
+    background: url(icons/chevronL_bold.svg);
+    background-size: 100% auto;
+    transform: rotate(-180deg);
+}
+.chevronR:hover{
+    background: url(icons/chevronR_bold.svg);
+    background-size: 100% auto;
+    transform:rotateX(180deg)
+}
+.frameRadio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+   
+    position: relative;
+    top: 290px;
+    margin-bottom: 7px;
+
+
+    
+}
+.circul{
+    width: 14px;
+    height: 14px;
+    left: 63.5px;
+    top: 0px;
+    border-radius: 50%;
+    border: 4px solid rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    display: block;
+    }
+#circul2{
+    margin: 0px 20px;
+}
+#circul1{
+    border: 4px solid #000000;
+}
+.headerSec{
+    margin-top: 200px;
+}
+.lineForm{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    /* display: flexbox; */
+}
+.line{
+    height: 0;
+    width: 1000px;
+    border: #000 1px solid;
+    margin-left: -42px;
+    margin-bottom: 61px;
+}
+#l1{
+    margin-top: 0px;
+}
+/* .card li{
+    margin: 0;
+} */
+.cardsContainer{
+
+    display: flex;
+    padding: 0;
+    margin: 0px 0px 200px 0px;
+    justify-content: space-between;
+   
+}
+.cardContent{
+    padding: 0;
+    margin: 0;
+    width: 320px;
+    min-height: 600px;
+    max-height: auto;
+    background: #cfcfcf;
+    border-radius: 5px;
+    position: relative;
+}
+.card{
+    padding: 0;
+    list-style-type: none;
+}
+.items{
+    margin: 0;
+}
+#blockImg{
+    width: 320px;
+    height: 465px;
+    background: #C4C4C4;
+    background-size: 100% auto;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+}
+.containerForChevronL, .containerForChevronR {
+    width: 320px;
+    height: 465px;
+    display: flex;
+    align-items: center;
+}
+.containerForChevronR{
+    justify-content: right;
+}
+#btn{
+    margin: 0;
+    position: absolute;
+    bottom: 11px;
+}
+.infoaboutItm{
+    display: flex;
+    justify-content: space-between;
+    margin: 19px 0px 97px 0px;
+    height: auto;
+}
+#labelItems{
+    width: 220px;
+    height: auto;
+    word-break:keep-all;
+}
+/* .lastContainerContent{
+
+} */
+.containerCards{
+    list-style-type: none;
+    display: flex;
+    width: 1000px;
+    padding: 0px;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 111px;
+}
+.litleCard{
+    width: 235px;
+    min-height: 333px;
+    max-height: auto;
+    background:#cfcfcf;
+    margin: 0;
+    display: flexbox;
+    border-radius: 5px;
+    /* border: olivedrab 1px solid; */
+}
+.insideBlock{
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.Img{
+    margin: 0;
+    width: 235px;
+    height: 255px;
+    background: #C4C4C4;
+    background-size: 100% auto;
+    border-radius: 5px;
+    /* align-items: center;
+    display: flex; */
+}
+.insideBlock li{
+    margin: 0;
+}
+.priceSale{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+}
+.len{
+    margin-right: 5px;
+    text-decoration:line-through;
+}
+#len{
+    color: #FF0000;
+}
+.labelItms{
+    margin-top: 23px;
+    margin-bottom: 34px;
+}
+.litlecontainerForChevronL, .litlecontainerForChevronR {
+    width: 235px;
+    height: 255px;
+    display: flex;
+    align-items: center;
+}
+.litlecontainerForChevronR{
+    justify-content: right;
+}
+.email{
+    margin: 0;
+}
+.listItms{
+    padding: 0;
+}
+.listItms li{
+    margin: 0;
+    list-style-type: none;
+}
+#list2{
+    margin: 30px 0px;
+}
+#list3{
+    width: 610px;
+}
+#discribeTxt{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #000000;
+
+}
+.emailL{
+    width: 405px;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+}
+#email{
+    align-self: center;
+    display: flex;
+    width: 100%;
+    height: 32px;
+    background: rgba(243, 243, 243, 0.71);
+    padding-left: 35px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    padding-left: 95px ;
+    padding-right: 60px;
+    outline: none;
+    z-index: 1;
+    /* position: relative; */
+}
+#email:focus{
+    border: #000 1px solid;
+}
+#span{
+    position: absolute;
+    bottom: 7px;
+    left: 35px;
+    z-index: 2;
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+
+}
+.btnEmail{
+    height: 24px;
+    width: 24px;
+    background: url(icons/Polygon1.svg);
+    /* border: 12px solid transparent;
+    border-left: 20px solid #C4C4C4;  */
+    background-size: 24px 24px;
+    /* border: #FF0000 solid 1px; */
+    margin: 4px 12px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    right: 11px;
+}
+.btnEmail:hover{
+    background: url(icons/Polygon1hover.svg);
+    background-size: 24px 24px;
+}
+footer{
+    background: black;
+    width: auto;
+    height: 350px;
+    margin-top: 100px;
+    padding-top: 88px;
+}
+.footerContent{
+    display: flex;
+    margin-bottom: 100px;
+    /* align-items: center; */
+}
+.logotip{
+    /* border: burlywood 1px solid; */
+    width: 160px;
+    height: 100px;
+    background: url(icons/EllipseLogo.svg);
+    background-size: 100% auto;   
+}
+.infoBarFooter a, li{
+    color: white;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+
+}
+.infoBarFooter{
+    margin: 0px 139px 0 auto;
+    padding: 0;
+}
+.social a{
+    border: #fff 1px solid;
+    color: #fff;
+    margin: 0;
+}
+.social a:hover{
+    background: #fff;
+    color: black;
+}
+.social span, #back span, .infoBarFooter li{
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+#back{
+    padding-top: 21px;
+    margin: 0px 107px 0px 0px;
+}
+.backBtn{
+    width: 31px;
+    height: 31px;
+    background: url(icons/Polygon2.svg);
+    background-size: 31px 31px;
+    display: block;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+.btnText{
+    margin: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.infoBarFooter li{
+    margin-bottom: 10px;
+}
+#lastItmList{
+    margin-bottom: 0px;
+}
+.formForbtnF{
+    display: flex;
+    justify-content: right;
+
+}
+.social span{
+    justify-content: right;
+    display: flex;
+}
+#number{
+    margin: 31px 0px 14px 0px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+}
+#contactEmail{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+}
+.low{
+    display: flex;
+    padding:0;
+    margin: 0;
+}
+.low a{
+    color: #fff;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    text-transform: capitalize;
+
+}
+.low li{
+    margin: 0px 40px;
+    display: flex;
+}
+#conteinerLow{
+    justify-content: center;
+    display: flex;
+}
+.lineLast{
+    height: 0px;
+    width: 100%;
+    border: solid 1px #fff;
+    position: absolute;
+    bottom: 67px;
+}
