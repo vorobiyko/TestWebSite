@@ -7,6 +7,9 @@ let circul3 = document.getElementById("circul3")
 let scrolling = document.querySelector('.cardsContainer')
 let btnNextRight = document.getElementById("btnRight")
 let btnNextLeft = document.getElementById("btnLeft")
+let btnR = document.getElementById("btnR")
+let btnL = document.getElementById("btnL")
+let scrolling1 = document.querySelector('.containerCards')
 
 // console.log(circul1.style +"Circul1");
 var amoutRightClicks = [];
@@ -114,6 +117,39 @@ btnNextLeft.addEventListener('click',()=>{
         count = count + 334;
         amoutRightNextClicks.length=amoutRightNextClicks.length-1;
         scrolling.style.transform = ("translateX("+count+"px)"); 
+    }
+    
+}
+)
+var amoutRightPrevClicks = [];
+var count1 = 0;
+btnR.addEventListener('click',()=>{
+    console.log('click')
+    console.log(count1);
+    var i = 'click';
+    amoutRightPrevClicks.push(i);
+    console.log(amoutRightPrevClicks.length); 
+    if(amoutRightPrevClicks.length == 5){
+        amoutRightPrevClicks.length = 0;
+    }
+    count1 = -12.5*amoutRightPrevClicks.length;
+    str_counter = String(count1); 
+    scrolling1.style.transform = ("translateX("+str_counter+"%)"); 
+}
+)
+btnL.addEventListener('click',()=>{
+    console.log('click')
+    console.log(count1);
+    if(count1 == 0){
+        scrolling1.style.transform = ("translateX("+-12.5*4+"%)");
+        count1 = -12.5*4;
+        amoutRightPrevClicks.length=4;
+
+    }
+    else{
+        count1 = count1 + 12.5;
+        amoutRightPrevClicks.length=amoutRightPrevClicks.length-1;
+        scrolling1.style.transform = ("translateX("+count1+"%)"); 
     }
     
 }
